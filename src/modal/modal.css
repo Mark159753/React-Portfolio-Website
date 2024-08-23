@@ -1,0 +1,86 @@
+.project-details-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: #DCDEE1 solid 1px;
+    border-radius: 20px;
+    width: 75%;
+    background: white;
+    padding: 0 20px 20px 20px;
+}
+
+.project-details-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(29,29,29, 0.5);
+}
+
+
+.close-btn {
+    top: 14px;
+    right: -6px;
+    position: relative;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.project-modal-container{
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh; /* Adjust this value as needed */
+    overflow-y: auto;
+}
+
+.project-details-modal-slider-img{
+    height: 360px;
+    background: gray;
+    padding: 0;
+    object-fit: cover;
+}
+
+.carousel{
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: flex;
+    gap: 6px;
+}
+
+.modal-chips{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.modal-details{
+    font-family: Caros, serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.modal-btn{
+    align-self: start;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .project-details-modal{
+        width: 96%;
+        height: auto;
+        z-index: 20;
+    }
+}

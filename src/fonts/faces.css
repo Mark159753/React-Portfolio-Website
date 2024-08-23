@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Caros';
+    src: url('caros_bold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('caros_light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('regular_caros.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caros';
+    src: url('caros_medium.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}

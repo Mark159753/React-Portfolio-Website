@@ -1,0 +1,137 @@
+#HEADER{
+    background: rgb(248, 247, 241);
+}
+.head{
+    min-height: 800px;
+}
+
+.header-content{
+    width: 100%;
+    position: relative;
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(0px, 1fr);
+}
+
+.person-img{
+    width: 55%;
+    aspect-ratio: 1.44 / 1;
+    place-self: end center;
+}
+
+.header_texts{
+    width: 100%;
+    height: 70%;
+    align-items: flex-start;
+    position: absolute;
+    align-self: center;
+    display: grid;
+    align-content: space-between;
+}
+
+.titles{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.column_titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.column_titles > span{
+    font-family: Caros;
+    font-weight: 600;
+    font-size: 74px;
+    color: rgb(50, 68, 74);
+    text-align: start;
+}
+
+.email-text{
+    font-family: Caros;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(242, 100, 64);
+    text-align: start;
+    text-decoration-line: underline;
+}
+
+.header_texts > a{
+    width: min-content;
+}
+
+.sub_title{
+    font-family: Caros;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgb(50, 68, 74);
+    text-align: center;
+    max-width: 25%;
+}
+
+.experience-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.experience-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.experience-titles > span{
+    margin: 0 2px;
+    color: rgb(50, 68, 74);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Caros;
+    text-align: start;
+}
+
+#thre_years{
+    color: rgb(50, 68, 74);
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Caros;
+}
+
+@media screen and (max-width: 768px) {
+    .titles{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .column_titles{
+        justify-content: flex-end;
+        text-align: center;
+    }
+    .sub_title{
+        color: rgb(50, 68, 74);
+        text-align: center;
+        max-width: 70%;
+        margin-top: 20px;
+    }
+    .header_texts{
+        align-items: center;
+        position: absolute;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .header_texts > a {
+        margin-top: 20px;
+    }
+    .person-img{
+        width: 70%;
+    }
+}

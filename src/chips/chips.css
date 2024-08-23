@@ -1,0 +1,16 @@
+
+.project-chip{
+    background-color: transparent;
+    border: #49494c solid 1px;
+    color: #49494c;
+    padding: 4px 10px;
+    border-radius: 100px;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    width: min-content;
+    font-family: Caros, sans-serif;
+    font-weight: 300;
+    font-size: 0.76rem;
+    white-space: nowrap;
+}

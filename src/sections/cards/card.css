@@ -1,0 +1,134 @@
+
+.card-container{
+    display: grid;
+    grid-template-columns: 66% 33%;
+    width: calc(50% - 16px);
+    border: #DCDEE1 solid 1px;
+    border-radius: 20px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.card-info-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info-column:last-child{
+    margin-top: auto;
+}
+
+.card-type-title{
+    font-family: Caros;
+    font-weight: 600;
+    color: #606368;
+    font-size: 0.8rem;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.card-title{
+    font-family: Caros;
+    font-weight: 600;
+    color: #202124;
+    font-size: 1.5rem;
+    line-height: 32px;
+    margin-top: 16px;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-description{
+    font-family: Caros;
+    font-weight: 300;
+    color: #0C0C0C;
+    font-size: 0.96rem;
+    margin-top: 0px;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-bts{
+    margin-top: auto;
+    text-align: start;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.card-button{
+    background-color: transparent;
+    border: #202124 solid 2px;
+    color: #202124;
+    padding: 8px 30px;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    width: min-content;
+    font-family: Caros;
+    font-weight: 400;
+    font-size: 0.96rem;
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.card_market_img{
+    width: 16px;
+    height: 16px;
+}
+
+.card-img-container{
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.card-image{
+    width: 100%;
+    aspect-ratio: 9/16;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.card-button:hover{
+    background-color: #202124;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.card-container:hover #card_detail_btn {
+    background-color: #202124;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.chips{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+    max-height: calc(2 * 1.5em + 2 * 10px);
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    .card-container {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}

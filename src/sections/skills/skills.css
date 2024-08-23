@@ -1,0 +1,147 @@
+#SKILLS{
+    background: rgb(248, 247, 241);
+    padding: 20px 0;
+}
+
+.skills-main{
+    flex-direction: row;
+    align-items: center;
+}
+
+.skills-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    align-items: baseline;
+}
+
+.familiar-tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+}
+
+.skills-tech-stack{
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-item{
+    display: flex;
+    flex-direction: column;
+    width: 88px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tech-icon-container{
+    width: 74px;
+    height: 74px;
+    background-color: rgb(13, 47, 63);
+    padding: 12px;
+    clip-path: circle(50% at 50% 50%);
+    place-items: start;
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows: minmax(0px, 1fr);
+}
+
+.tech-ic{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.tech-item-title{
+    font-family: Caros, serif;
+    font-weight: 300;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    color: rgb(50, 68, 74);
+    margin: 20px 0px 0px;
+    align-self: center;
+}
+
+.programing-languages{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.language-item{
+    margin: 16px 0px 0px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.language-name{
+    font-family: Caros, serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(50, 68, 74);
+}
+
+.progress-container{
+    margin: 8px 0px 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.progress-bar{
+    height: 20px;
+    flex-grow: 1;
+    place-items: start;
+    display: grid;
+}
+
+.progress-bar-path{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgb(188, 188, 188);
+    grid-area: 1 / 1;
+}
+
+.progress-value-path{
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgb(50, 68, 74);
+    grid-area: 1 / 1;
+}
+
+.progress{
+    font-family: Caros, serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px 0px 0px 8px;
+    color: rgb(50, 68, 74);
+}
+
+.abount-me-details{
+    font-family: Caros, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-container{
+        grid-template-columns: 1fr;
+        gap: 5%;
+    }
+
+    .abount-me-details{
+        margin-bottom: 50px;
+    }
+}

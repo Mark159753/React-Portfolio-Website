@@ -1,0 +1,167 @@
+nav {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.navMenu ul {
+    display: flex;
+    gap: 50px;
+    font-size: 1.01em;
+}
+
+.navItem > a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    color: rgb(50, 68, 74);
+}
+
+.navItem > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: rgb(50, 68, 74);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.navItem > a:hover::after,
+.navItem > a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+.navItem > a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.navItem > a:hover::after,
+.navItem > a:focus::after{
+    transform: scale(1);
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.navMenu span{
+    flex: 1;
+    text-align: start;
+    font-family: Caros, serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: rgb(50, 68, 74);
+}
+
+.navMenu a {
+    flex: 0.3;
+    text-align: end;
+}
+
+.navMenu li {
+    list-style: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#hamburger div {
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    margin: 4px 0;
+    transition: 0.5s;
+}
+#hamburger {
+    display: none;
+}
+
+#gitHub_menu_item{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    #gitHub_menu_item{
+        display: block;
+    }
+
+    .navMenu > span{
+        display: none;
+    }
+
+    .navMenu > a{
+        display: none;
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgb(218, 213, 206);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .navMenu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
+    }
+    .navMenu li {
+        color: white;
+        padding: 15px 0;
+    }
+}
+
+.nav-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+#hamburger.toggle div {
+    background-color: black;
+}
+.toggle #bar1 {
+    transform: rotate(-45deg) translate(-5px, 4px);
+}
+.toggle #bar2 {
+    opacity: 0;
+}
+.toggle #bar3 {
+    transform: rotate(45deg) translate(-5px, -4px);
+}
+
+#github_link{
+    width: 32px;
+    height: 32px;
+}

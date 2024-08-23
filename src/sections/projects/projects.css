@@ -1,0 +1,30 @@
+
+
+#WORKS{
+    background: white;
+    padding: 20px 0;
+}
+
+.projects-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.github-repositories-link{
+    margin-top: 50px;
+    width: min-content;
+    font-family: Caros, serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: rgb(242, 100, 64);
+    align-self: end;
+    text-decoration-line: underline;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .github-repositories-link{
+        align-self: start;
+    }
+}
